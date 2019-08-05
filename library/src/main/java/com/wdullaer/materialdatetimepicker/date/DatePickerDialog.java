@@ -442,10 +442,8 @@ public class DatePickerDialog extends AppCompatDialogFragment implements
         view.findViewById(R.id.mdtp_day_picker_selected_date_layout).setBackgroundColor(mAccentColor);
 
         // Buttons can have a different color
-        if (mOkColor != -1) okButton.setTextColor(mOkColor);
-        else okButton.setTextColor(mAccentColor);
+        if (mOkColor != -1) okButton.setTextColor(mOkColor)
         if (mCancelColor != -1) cancelButton.setTextColor(mCancelColor);
-        else cancelButton.setTextColor(mAccentColor);
 
         if (getDialog() == null) {
             view.findViewById(R.id.mdtp_done_background).setVisibility(View.GONE);
